@@ -2,7 +2,7 @@ from distutils.core import setup
 setup(
   name = 'lamia',
   packages = ['lamia'], 
-  version = '0.1',
+  version = '0.11',
   description = 'API wrapper for Danbooru',
   author = 'Rg Tq Ug',
   author_email = 'rosecross@openmailbox.org',
