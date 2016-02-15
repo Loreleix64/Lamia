@@ -45,7 +45,7 @@ class api(object):
 		requests.post("http//danbooru.donmai.us/dmails.json?dmail[to_name]=" + to + "&dmail[title]=" + title + "&dmail[body]=" + body, auth=HTTPBasicAuth(self.user, self.key))
 		
 	def create_entry(self, title, body):
-		requests.post(("http://danbooru.donmai.us/wiki_pages.json?wiki_page[title]=" + str(title) + "&wiki_page[body]=" + str(body))
+		requests.post(("http://danbooru.donmai.us/wiki_pages.json?wiki_page[title]=" + str(title) + "&wiki_page[body]=" + str(body)),
 					 auth=HTTPBasicAuth(self.user, self.key))
 		
 	def get_entries(self, terms):
