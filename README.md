@@ -1,7 +1,13 @@
 # Lamia
-Python wrapper for Danbooru's API.
+Python wrapper for Danbooru's API. For Python 2.7.
+
+##Installation
+`pip install lamia` or `pip2.7 install lamia`
 
 ##Changelog
+###Version 0.2
+Fixed all broken functions. The first stable pre-release, but by no means complete.
+
 ###Version 0.11
 Fixed some 0.1 release errors.
 
