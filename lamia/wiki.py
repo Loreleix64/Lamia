@@ -24,9 +24,9 @@ class entry(object):
 		self.creator_name = page["creator_name"]
 		
 	def update_title(self, title):
-		requests.put(("http://danbooru.donmai.us/wiki_pages/" + str(self.id_number) + ".json?wiki_page[title]=" + str(title) + "&wiki_page[body]=" + self.body)
+		requests.put(("http://danbooru.donmai.us/wiki_pages/" + str(self.id_number) + ".json?wiki_page[title]=" + str(title) + "&wiki_page[body]=" + self.body),
 					 auth=HTTPBasicAuth(self.user, self.key))
 		
 	def update_body(self, body):
-		requests.put(("http://danbooru.donmai.us/wiki_pages/" + str(self.id_number) + ".json?wiki_page[title]=" + self.title + "&wiki_page[body]=" + str(body))
+		requests.put(("http://danbooru.donmai.us/wiki_pages/" + str(self.id_number) + ".json?wiki_page[title]=" + self.title + "&wiki_page[body]=" + str(body)),
 					 auth=HTTPBasicAuth(self.user, self.key))
